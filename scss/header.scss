@@ -17,6 +17,9 @@ header {
         @media (max-width: 575px) {
           width: 220px;
         }
+        @media (max-width: 400px) {
+          width: 165px;
+        }
       }
     }
     .navbar-collapse {

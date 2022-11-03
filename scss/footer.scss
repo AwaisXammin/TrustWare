@@ -1,0 +1,138 @@
+footer {
+  background: linear-gradient(0deg, rgb(7 14 36 / 92%), rgb(7 14 36 / 97%)),
+    url(../img/Footer-img.jpg);
+  background-size: cover;
+  padding-top: 4%;
+  .container-fluid {
+    .main-row {
+      margin-bottom: 40px;
+    }
+    .bottom {
+      border-top: 1px solid #ffffff26;
+      padding-top: 22px;
+      margin-top: 50px;
+      @media (max-width: 575px) {
+        text-align: center;
+      }
+      p {
+        font-size: 16px;
+        @media (max-width: 575px) {
+          margin-bottom: 12px;
+        }
+      }
+      .column-right {
+        text-align: right;
+        @media (max-width: 575px) {
+          text-align: center;
+        }
+        p {
+          a {
+            transition: all 0.3s;
+            &:hover {
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+    .row {
+      .address-column {
+        @media (max-width: 991px) {
+          width: 50%;
+        }
+        @media (max-width: 767px) {
+          width: 100%;
+        }
+      }
+      .content {
+        .footer-header {
+          margin-bottom: 20px;
+          .footer-logo {
+            img {
+              width: 270px;
+            }
+          }
+          h4 {
+            font-size: 35px;
+            color: #fff;
+            border-bottom: 1px solid;
+            padding-bottom: 19px;
+            width: fit-content;
+            @media (max-width: 575px) {
+              font-size: 28px;
+            }
+          }
+        }
+        .body-content {
+          .button {
+            @media (max-width: 575px) {
+              margin-bottom: 40px;
+            }
+          }
+          .address {
+            border: 1px solid #ffffff2e;
+            border-radius: 12px;
+            padding: 28px 37px;
+            margin-bottom: 12px;
+            backdrop-filter: blur(30px);
+            @media (max-width: 1399px) {
+              padding: 38px 18px;
+            }
+            p {
+              margin-bottom: 10px;
+            }
+            .number {
+              font-size: 16px;
+              margin-bottom: 6px;
+              @media (max-width: 400px) {
+                font-size: 13px;
+              }
+            }
+            button {
+              background: #ffffff17;
+              color: #fff;
+              padding: 7px 17px;
+              font-size: 14px;
+              border: 1px solid #ffffff0d;
+              border-radius: 7px;
+              transition: all 0.3s;
+              &:hover {
+                opacity: 0.6;
+              }
+            }
+          }
+
+          .links {
+            li {
+              font-size: 19px;
+              color: $gray;
+              margin-right: 15px;
+              a {
+                transition: all 0.3s;
+                &:hover {
+                  color: #fff;
+                }
+              }
+            }
+          }
+          .contact,
+          .social-links {
+            display: flex;
+            margin-bottom: 20px;
+            li {
+              font-size: 19px;
+              color: $gray;
+              margin-right: 15px;
+              a {
+                transition: all 0.3s;
+                &:hover {
+                  color: #fff;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

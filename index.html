@@ -27,6 +27,9 @@
       crossorigin="anonymous"
     />
 
+    <!--### AOS Animation ###-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <!--### Style Sheet ###-->
     <link rel="stylesheet" href="css/style.css" />
     <title>TrustWare</title>
@@ -59,48 +62,49 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
+              <a class="nav-link" href="#about">About Us</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="#">About Us</a>
+              <a class="nav-link" href="#features">Features</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="#">FAQ</a>
+              <a class="nav-link" href="#team">Team</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="#">Team</a>
+              <a class="nav-link" href="#faq">FAQ</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="#">Blog</a>
+              <a class="nav-link" href="#blog">Blog</a>
             </li>
           </ul>
           <div class="button">
             <div class="btn">
-              <a href="#" class="menu-btn">Get Updates</a>
+              <a href="#home" class="menu-btn">Get Updates</a>
             </div>
           </div>
         </div>
       </nav>
     </header>
 
-    <section class="banner-section">
-      <div class="shape right"></div>
+    <section class="banner-section" id="home">
       <div class="container-fluid">
         <div class="row">
           <div class="content">
-            <h1>Discover, Collect, & Sell Exclusive Nfts</h1>
-            <p>
+            <h1 data-aos="fade-down" data-aos-delay="300">
+              Discover, Collect, & Sell Exclusive Nfts
+            </h1>
+            <p data-aos="fade-down" data-aos-delay="700">
               Sed ut perspiciatis unde omnis iste natus error sit voluptatem
               accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
               quae ab illo inventore veritatis et quasi architecto beatae vitae
               dicta sunt explicabo.
             </p>
 
-            <div class="input-group">
+            <div class="input-group" data-aos="fade-down" data-aos-delay="900">
               <input
                 type="email"
                 class="form-control"
@@ -114,9 +118,8 @@
             </div>
           </div>
         </div>
-        <div class="row" style="position: relative">
-          <div class="shape"></div>
-          <main>
+        <div class="row">
+          <main data-aos="fade-up" data-aos-delay="1000">
             <div id="carousel">
               <div class="hideLeft">
                 <img src="img/banner-img-1.jpg" alt="banner-img" />
@@ -160,21 +163,21 @@
       </div>
     </section>
 
-    <section class="about-section">
-      <div class="shape right"></div>
-
+    <section class="about-section" id="about">
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-6 col-sm-12 col-12">
-            <div class="image">
+            <div class="image" data-aos="fade-right">
               <img src="img/about-01.png" alt="About-Image" />
             </div>
           </div>
           <div class="col-md-6 col-sm-12 col-12">
             <div class="content">
-              <span class="headline">Purpose </span>
-              <h2>About Us</h2>
-              <p>
+              <span class="headline" data-aos="fade-down" data-aos-delay="300"
+                >Purpose
+              </span>
+              <h2 data-aos="fade-down" data-aos-delay="400">About Us</h2>
+              <p data-aos="fade-down" data-aos-delay="600">
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                 accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
                 quae ab illo inventore veritatis et quasi architecto beatae
@@ -186,15 +189,645 @@
                 modi tempora incidunt ut labore et dolore magnam aliquam quaerat
                 voluptatem.
               </p>
-              <div class="button">
+              <div class="button" data-aos="fade-down" data-aos-delay="800">
                 <a href="#">Get Started</a>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="shape"></div>
     </section>
+
+    <section class="features-section" id="features">
+      <div class="container-fluid">
+        <div class="heading">
+          <span class="headline" data-aos="fade-down">Services </span>
+          <h2 data-aos="fade-down" data-aos-delay="300">Features</h2>
+          <p data-aos="fade-down" data-aos-delay="400">
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium, totam rem aperiam.
+          </p>
+        </div>
+        <div class="row">
+          <div
+            class="col-md-3 col-sm-12 col-12"
+            data-aos="fade-up"
+            data-aos-delay="600"
+          >
+            <div class="content active">
+              <div class="image">
+                <img src="img/Collection.png" alt="Features-Img" />
+              </div>
+              <div class="text">
+                <h4>Huge Collection</h4>
+                <p>
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-md-3 col-sm-12 col-12"
+            data-aos="fade-up"
+            data-aos-delay="900"
+          >
+            <div class="content">
+              <div class="image">
+                <img src="img/Quality.png" alt="Features-Img" />
+              </div>
+              <div class="text">
+                <h4>High Quality</h4>
+                <p>
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-md-3 col-sm-12 col-12"
+            data-aos="fade-up"
+            data-aos-delay="1200"
+          >
+            <div class="content">
+              <div class="image">
+                <img src="img/Resources.png" alt="Features-Img" />
+              </div>
+              <div class="text">
+                <h4>Top Resource</h4>
+                <p>
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-md-3 col-sm-12 col-12"
+            data-aos="fade-up"
+            data-aos-delay="1500"
+          >
+            <div class="content">
+              <div class="image">
+                <img src="img/communities.png" alt="Features-Img" />
+              </div>
+              <div class="text">
+                <h4>Big Community</h4>
+                <p>
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="roadmap-section">
+      <div class="container-fluid">
+        <div class="heading">
+          <h2 data-aos="fade-down">Roadmap</h2>
+          <p data-aos="fade-down" data-aos-delay="200">
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium, totam rem aperiam.
+          </p>
+        </div>
+        <div class="container">
+          <div class="timeline">
+            <div class="timeline-row" data-aos="fade-up">
+              <div class="timeline-time">7:45PM<small>Dec 21</small></div>
+              <div class="timeline-content">
+                <i class="icon-attachment"
+                  ><img src="img/Whitelist.png" alt="Roadmap-icon"
+                /></i>
+                <h4>Whitelist</h4>
+                <p>
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium.
+                </p>
+              </div>
+            </div>
+
+            <div class="timeline-row" data-aos="fade-up" data-aos-delay="300">
+              <div class="timeline-time">7:45PM<small>Dec 21</small></div>
+              <div class="timeline-content">
+                <i class="icon-attachment"
+                  ><img src="img/hot-sale.png" alt="Roadmap-icon"
+                /></i>
+                <h4>Sales Of Golden Horns</h4>
+                <p>
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium.
+                </p>
+              </div>
+            </div>
+
+            <div class="timeline-row" data-aos="fade-up" data-aos-delay="300">
+              <div class="timeline-time">7:45PM<small>Dec 21</small></div>
+              <div class="timeline-content">
+                <i class="icon-attachment"
+                  ><img src="img/user.png" alt="Roadmap-icon"
+                /></i>
+                <h4>Quality Partner Establishments</h4>
+                <p>
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium.
+                </p>
+              </div>
+            </div>
+
+            <div class="timeline-row" data-aos="fade-up" data-aos-delay="300">
+              <div class="timeline-time">7:45PM<small>Dec 21</small></div>
+              <div class="timeline-content">
+                <i class="icon-attachment"
+                  ><img src="img/gitf.png" alt="Roadmap-icon"
+                /></i>
+                <h4>Meta Gift</h4>
+                <p>
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium.
+                </p>
+              </div>
+            </div>
+
+            <div class="timeline-row" data-aos="fade-up" data-aos-delay="300">
+              <div class="timeline-time">7:45PM<small>Dec 21</small></div>
+              <div class="timeline-content">
+                <i class="icon-attachment"
+                  ><img src="img/Invesment.png" alt=""
+                /></i>
+                <h4>Invesment</h4>
+                <p>
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="team-section" id="team">
+      <div class="container-fluid">
+        <div class="heading">
+          <h2 data-aos="fade-down">Team</h2>
+          <p data-aos="fade-down" data-aos-delay="200">
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium, totam rem aperiam.
+          </p>
+        </div>
+        <div class="row">
+          <div
+            class="col-md-4 col-sm-12 col-12"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <div class="content">
+              <div class="team-image">
+                <img src="img/team-1.jpeg" alt="Team-Img" />
+              </div>
+              <div class="text">
+                <h4>Michael Gibson</h4>
+                <p>Ceo Founder</p>
+              </div>
+              <div class="social-media">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-md-4 col-sm-12 col-12"
+            data-aos="fade-up"
+            data-aos-delay="700"
+          >
+            <div class="content">
+              <div class="team-image">
+                <img src="img/team-2.jpeg" alt="Team-Img" />
+              </div>
+              <div class="text">
+                <h4>Karen Goldsmith</h4>
+                <p>Director</p>
+              </div>
+              <div class="social-media">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-md-4 col-sm-12 col-12"
+            data-aos="fade-up"
+            data-aos-delay="1000"
+          >
+            <div class="content">
+              <div class="team-image">
+                <img src="img/team-3.jpeg" alt="Team-Img" />
+              </div>
+              <div class="text">
+                <h4>Andrew Martinez</h4>
+                <p>Bitcoin Consultant</p>
+              </div>
+              <div class="social-media">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq-section" id="faq">
+      <div class="container-fluid">
+        <div class="heading">
+          <h2 data-aos="fade-down">FAQ</h2>
+          <p data-aos="fade-down" data-aos-delay="200">
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium, totam rem aperiam.
+          </p>
+        </div>
+        <div class="row">
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item" data-aos="fade-up" data-aos-delay="400">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseOne"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseOne"
+                >
+                  Will There Be A Presale ?
+                </button>
+              </h2>
+              <div
+                id="flush-collapseOne"
+                class="accordion-collapse collapse"
+                aria-labelledby="flush-headingOne"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  <p>
+                    Sed ut perspiciatis unde omnis iste natus error sit
+                    voluptatem accusantium doloremque laudantium, totam rem
+                    aperiam, eaque ipsa quae ab illo inventore veritatis et
+                    quasi architecto beatae vitae dicta sunt explicabo.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item" data-aos="fade-up" data-aos-delay="700">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseTwo"
+                >
+                  What Will Be The Price At The Mint ?
+                </button>
+              </h2>
+              <div
+                id="flush-collapseTwo"
+                class="accordion-collapse collapse"
+                aria-labelledby="flush-headingTwo"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  <p>
+                    Sed ut perspiciatis unde omnis iste natus error sit
+                    voluptatem accusantium doloremque laudantium, totam rem
+                    aperiam, eaque ipsa quae ab illo inventore veritatis et
+                    quasi architecto beatae vitae dicta sunt explicabo.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="accordion-item"
+              data-aos="fade-up"
+              data-aos-delay="1000"
+            >
+              <h2 class="accordion-header" id="flush-headingThree">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseThree"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseThree"
+                >
+                  When Will The Public Sales Launch ?
+                </button>
+              </h2>
+              <div
+                id="flush-collapseThree"
+                class="accordion-collapse collapse"
+                aria-labelledby="flush-headingThree"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  <p>
+                    Sed ut perspiciatis unde omnis iste natus error sit
+                    voluptatem accusantium doloremque laudantium, totam rem
+                    aperiam, eaque ipsa quae ab illo inventore veritatis et
+                    quasi architecto beatae vitae dicta sunt explicabo.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="whitepaper-section">
+      <div class="container-fluid">
+        <div class="heading">
+          <h2 data-aos="fade-down">Get Started</h2>
+          <p data-aos="fade-down" data-aos-delay="200">
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium, totam rem aperiam.
+          </p>
+          <div class="button" data-aos="fade-up" data-aos-delay="400">
+            <a href="#">Whitepaper</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="blog-section" id="blog">
+      <div class="container-fluid">
+        <div class="heading">
+          <h2 data-aos="fade-down">Blog</h2>
+          <p data-aos="fade-down" data-aos-delay="200">
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium, totam rem aperiam.
+          </p>
+        </div>
+        <!--### Row ###-->
+        <div class="row">
+          <!--### Post-1 ###-->
+          <div
+            class="col-md-4 col-sm-12 col-12"
+            data-aos="fade-down"
+            data-aos-delay="400"
+          >
+            <div class="post-grid">
+              <div class="image">
+                <img src="img/post-1.jpg" alt="Post-1-img" />
+              </div>
+              <div class="content">
+                <p class="publish-date">April 24, 2022</p>
+                <a href="single-blog-post.html"
+                  ><h3>Poetry And NFTs: A New Cyber-Culture?</h3></a
+                >
+                <p>
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium
+                </p>
+                <a href="single-blog-post.html" class="read-more-btn"
+                  >Read More</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!--### Post-2 ###-->
+          <div
+            class="col-md-4 col-sm-12 col-12"
+            data-aos="fade-down"
+            data-aos-delay="700"
+          >
+            <div class="post-grid">
+              <div class="image">
+                <img src="img/post-2.jpg" alt="Post-2-img" />
+              </div>
+              <div class="content">
+                <p class="publish-date">April 15, 2022</p>
+                <a href="single-blog-post.html"
+                  ><h3>CryptoPunks VS Bored Ape Yacht Club</h3></a
+                >
+                <p>
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium
+                </p>
+                <a href="single-blog-post.html" class="read-more-btn"
+                  >Read More</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!--### Post-3 ###-->
+          <div
+            class="col-md-4 col-sm-12 col-12"
+            data-aos="fade-down"
+            data-aos-delay="1000"
+          >
+            <div class="post-grid">
+              <div class="image">
+                <img src="img/post-3.jpg" alt="Post-3-img" />
+              </div>
+              <div class="content">
+                <p class="publish-date">March 7, 2022</p>
+                <a href="single-blog-post.html"
+                  ><h3>NFT Art: Where To Begin?</h3></a
+                >
+                <p>
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium
+                </p>
+                <a href="single-blog-post.html" class="read-more-btn"
+                  >Read More</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container-fluid">
+        <div class="row main-row">
+          <div class="col-md-4 col-sm-12 col-12">
+            <div class="content">
+              <div class="footer-header">
+                <div class="footer-logo">
+                  <img src="img/Logo.png" alt="Logo" />
+                </div>
+              </div>
+              <div class="body-content">
+                <ul class="social-links">
+                  <li>
+                    <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                  </li>
+
+                  <li>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                  </li>
+
+                  <li>
+                    <a href=""><i class="fa-brands fa-discord"></i></a>
+                  </li>
+
+                  <li>
+                    <a href=""><i class="fa-brands fa-telegram"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-12 col-12">
+            <div class="content">
+              <div class="footer-header">
+                <h4>Contact</h4>
+              </div>
+              <div class="body-content">
+                <ul class="contact">
+                  <li>
+                    <a href="mailto:info@trustware.io">info@trustware.io</a>
+                  </li>
+                </ul>
+                <div class="button">
+                  <a href="#">Get Started</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-12 col-12">
+            <div class="content">
+              <div class="footer-header">
+                <h4>Quick Links</h4>
+              </div>
+              <div class="body-content">
+                <ul class="links">
+                  <li>
+                    <a href="#home">Home</a>
+                  </li>
+                  <li>
+                    <a href="#about">About Us</a>
+                  </li>
+                  <li>
+                    <a href="#features">Features</a>
+                  </li>
+                  <li>
+                    <a href="#faq">FAQ</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="content">
+            <div class="footer-header">
+              <h4>Donation</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4 col-sm-12 col-12 address-column">
+            <div class="content">
+              <div class="body-content">
+                <div class="address">
+                  <p>ETH</p>
+                  <p id="p1" class="number">
+                    0xa599Ee30DB133953e6114C592aA75742c9a831AD
+                  </p>
+                  <button onclick="copyToClipboard('#p1')">
+                    COPY <i class="fa-regular fa-copy"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-12 col-12 address-column">
+            <div class="content">
+              <div class="body-content">
+                <div class="address">
+                  <p>BTC</p>
+                  <p id="p2" class="number">
+                    0xB05110FFf89B9939c4a0E18121903ecC82E4D99e
+                  </p>
+                  <button onclick="copyToClipboard('#p2')">
+                    COPY <i class="fa-regular fa-copy"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-12 col-12 address-column">
+            <div class="content">
+              <div class="body-content">
+                <div class="address">
+                  <p>USDT</p>
+                  <p id="p3" class="number">
+                    0x97Fb3e52c6f9f593634316C7505566DE914640A2
+                  </p>
+                  <button onclick="copyToClipboard('#p3')">
+                    COPY <i class="fa-regular fa-copy"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row bottom">
+          <!--### Column-1 ###-->
+          <div class="col-md-6 col-sm-6 col-12">
+            <p>© Copyright 2022 TrustWare</p>
+          </div>
+          <!--### Column-2 ###-->
+          <div class="col-md-6 col-sm-6 col-12 column-right">
+            <p>
+              Design By <a href="https://xammin.com/" target="_blank">Xammin</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <script>
+      function copyToClipboard(element) {
+        var $temp = $("<input>");
+        $("body").append($temp);
+        $temp.val($(element).text()).select();
+        document.execCommand("copy");
+        $temp.remove();
+      }
+    </script>
 
     <!--### Banner-Section Img ###-->
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>

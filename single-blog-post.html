@@ -57,10 +57,6 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home</a>
-            </li>
-
             <li class="nav-item">
               <a class="nav-link" href="#about">About Us</a>
             </li>
@@ -70,16 +66,20 @@
             </li>
 
             <li class="nav-item">
+              <a class="nav-link" href="#roadmap">Roadmap</a>
+            </li>
+
+            <li class="nav-item">
               <a class="nav-link" href="#team">Team</a>
             </li>
 
             <li class="nav-item">
               <a class="nav-link" href="#faq">FAQ</a>
             </li>
-
+            <!-- 
             <li class="nav-item">
               <a class="nav-link" href="#blog">Blog</a>
-            </li>
+            </li> -->
           </ul>
           <div class="button">
             <div class="btn">
@@ -132,13 +132,74 @@
 
     <footer>
       <div class="container-fluid">
+        <div class="row">
+          <div class="content">
+            <div class="footer-header top-header">
+              <h4>Donations</h4>
+              <p>
+                Qui incidunt ipsa eos soluta quia quo inventore repellendus et
+                sit amet. Cum dolor quia eos maiores sapiente aut fugiat
+                inventore quia.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4 col-sm-12 col-12 address-column">
+            <div class="content">
+              <div class="body-content">
+                <div class="address">
+                  <p>ETH</p>
+                  <p id="p1" class="number">
+                    0xa599Ee30DB133953e6114C592aA75742c9a831AD
+                  </p>
+                  <button onclick="copyToClipboard('#p1')">
+                    COPY <i class="fa-regular fa-copy"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-12 col-12 address-column">
+            <div class="content">
+              <div class="body-content">
+                <div class="address">
+                  <p>BTC</p>
+                  <p id="p2" class="number">
+                    0xB05110FFf89B9939c4a0E18121903ecC82E4D99e
+                  </p>
+                  <button onclick="copyToClipboard('#p2')">
+                    COPY <i class="fa-regular fa-copy"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-12 col-12 address-column">
+            <div class="content">
+              <div class="body-content">
+                <div class="address">
+                  <p>USDT</p>
+                  <p id="p3" class="number">
+                    0x97Fb3e52c6f9f593634316C7505566DE914640A2
+                  </p>
+                  <button onclick="copyToClipboard('#p3')">
+                    COPY <i class="fa-regular fa-copy"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="row main-row">
-          <div class="col-md-4 col-sm-12 col-12">
+          <div class="col-md-6 col-sm-12 col-12">
             <div class="content">
               <div class="footer-header">
-                <div class="footer-logo">
-                  <img src="img/Logo.png" alt="Logo" />
-                </div>
+                <h4>Follow Us</h4>
               </div>
               <div class="body-content">
                 <ul class="social-links">
@@ -162,25 +223,7 @@
             </div>
           </div>
 
-          <div class="col-md-4 col-sm-12 col-12">
-            <div class="content">
-              <div class="footer-header">
-                <h4>Contact</h4>
-              </div>
-              <div class="body-content">
-                <ul class="contact">
-                  <li>
-                    <a href="mailto:info@trustware.io">info@trustware.io</a>
-                  </li>
-                </ul>
-                <div class="button">
-                  <a href="#">Get Started</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4 col-sm-12 col-12">
+          <div class="col-md-6 col-sm-12 col-12">
             <div class="content">
               <div class="footer-header">
                 <h4>Quick Links</h4>
@@ -197,7 +240,16 @@
                     <a href="#features">Features</a>
                   </li>
                   <li>
+                    <a href="#roadmap">Roadmap</a>
+                  </li>
+                  <li>
+                    <a href="#team">Team</a>
+                  </li>
+                  <li>
                     <a href="#faq">FAQ</a>
+                  </li>
+                  <li>
+                    <a href="#blog">Blog</a>
                   </li>
                 </ul>
               </div>
@@ -206,74 +258,17 @@
         </div>
 
         <div class="row">
-          <div class="content">
-            <div class="footer-header">
-              <h4>Donation</h4>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-4 col-sm-12 col-12">
-            <div class="content">
-              <div class="body-content">
-                <div class="address">
-                  <p>ETH</p>
-                  <p id="p1" class="number">
-                    0xa599Ee30DB133953e6114C592aA75742c9a831AD
-                  </p>
-                  <button onclick="copyToClipboard('#p1')">
-                    COPY <i class="fa-regular fa-copy"></i>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4 col-sm-12 col-12">
-            <div class="content">
-              <div class="body-content">
-                <div class="address">
-                  <p>BTC</p>
-                  <p id="p2" class="number">
-                    0xB05110FFf89B9939c4a0E18121903ecC82E4D99e
-                  </p>
-                  <button onclick="copyToClipboard('#p2')">
-                    COPY <i class="fa-regular fa-copy"></i>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4 col-sm-12 col-12">
-            <div class="content">
-              <div class="body-content">
-                <div class="address">
-                  <p>USDT</p>
-                  <p id="p3" class="number">
-                    0x97Fb3e52c6f9f593634316C7505566DE914640A2
-                  </p>
-                  <button onclick="copyToClipboard('#p3')">
-                    COPY <i class="fa-regular fa-copy"></i>
-                  </button>
-                </div>
-              </div>
-            </div>
+          <div class="footer-logo">
+            <img src="img/Logo.png" alt="Logo" />
           </div>
         </div>
 
         <div class="row bottom">
           <!--### Column-1 ###-->
-          <div class="col-md-6 col-sm-6 col-12">
-            <p>© Copyright 2022 TrustWare</p>
-          </div>
+
+          <p>DESIGNED BY COLLEEN MULLIGAN</p>
+
           <!--### Column-2 ###-->
-          <div class="col-md-6 col-sm-6 col-12 column-right">
-            <p>
-              Design By <a href="https://xammin.com/" target="_blank">Xammin</a>
-            </p>
-          </div>
         </div>
       </div>
     </footer>

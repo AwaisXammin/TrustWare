@@ -77,9 +77,9 @@ section {
 .button {
   width: fit-content;
   padding: 10px 40px;
-  box-shadow: 0 7px 30px rgba(204, 93, 251, 0.71);
+  box-shadow: 0 7px 30px rgba(144, 105, 173, 0.3607843137);
   background-image: linear-gradient(294deg, #d15ffb, #5f37f6);
-  background-image: linear-gradient(130deg, #d15ffb, #5f37f6, #5f37f6, #d15ffb);
+  background-image: linear-gradient(130deg, #262261, #623c97, #262261, #623c97);
   background-size: 300% 100%;
   border-radius: 58px;
   transition: all 0.4s ease-in-out;
@@ -455,7 +455,7 @@ main img {
 .features-section .container-fluid .row .content .image {
   width: 100px;
   background: linear-gradient(45deg, black, transparent);
-  background-image: linear-gradient(130deg, #d15ffb, #5f37f6);
+  background-image: linear-gradient(130deg, #262261, #623c97);
   border: none;
   margin-bottom: 20px;
 }
@@ -475,9 +475,9 @@ main img {
   top: 0;
   left: 50%;
   margin-left: -2px;
-  border-right: 2px dashed #5f37f6;
+  border-right: 2px dashed #623c97;
   opacity: 0.9;
-  box-shadow: 0px 0px 40px 1px #5f37f6;
+  box-shadow: 0px 0px 40px 1px #262261;
   height: 100%;
   display: block;
 }
@@ -531,7 +531,7 @@ main img {
   -moz-border-radius: 100px;
   border-radius: 100px;
   z-index: 10;
-  background-image: linear-gradient(130deg, #d15ffb, #5f37f6);
+  background-image: linear-gradient(130deg, #262261, #623c97);
 }
 .roadmap-section .container-fluid .container .timeline .timeline-row .timeline-content h4 {
   margin: 0 0 20px 0;
@@ -678,7 +678,7 @@ main img {
   margin: 0 3px;
 }
 .team-section .container-fluid .row .content .social-media i:hover {
-  background-image: linear-gradient(130deg, #d15ffb, #5f37f6);
+  background-image: linear-gradient(130deg, #262261, #623c97);
 }
 
 .faq-section .container-fluid .row {

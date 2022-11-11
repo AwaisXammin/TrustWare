@@ -11,31 +11,27 @@ footer {
       border-top: 1px solid #ffffff26;
       padding-top: 22px;
       margin-top: 50px;
+      margin-bottom: 0 !important;
       @media (max-width: 575px) {
         text-align: center;
       }
       p {
         font-size: 16px;
+        text-align: center;
         @media (max-width: 575px) {
           margin-bottom: 12px;
         }
       }
-      .column-right {
-        text-align: right;
-        @media (max-width: 575px) {
-          text-align: center;
-        }
-        p {
-          a {
-            transition: all 0.3s;
-            &:hover {
-              color: #fff;
-            }
-          }
-        }
-      }
     }
     .row {
+      margin-bottom: 40px;
+      .footer-logo {
+        width: fit-content;
+        margin: 0 auto;
+        img {
+          width: 270px;
+        }
+      }
       .address-column {
         @media (max-width: 991px) {
           width: 50%;
@@ -45,19 +41,23 @@ footer {
         }
       }
       .content {
+        .top-header {
+          text-align: center;
+          h4 {
+            margin: 0 auto;
+          }
+        }
         .footer-header {
           margin-bottom: 20px;
-          .footer-logo {
-            img {
-              width: 270px;
-            }
-          }
+
           h4 {
             font-size: 35px;
             color: #fff;
             border-bottom: 1px solid;
             padding-bottom: 19px;
             width: fit-content;
+
+            margin-bottom: 20px;
             @media (max-width: 575px) {
               font-size: 28px;
             }
@@ -84,7 +84,7 @@ footer {
             .number {
               font-size: 16px;
               margin-bottom: 6px;
-              @media (max-width: 400px) {
+              @media (max-width: 907px) {
                 font-size: 13px;
               }
             }
@@ -103,10 +103,11 @@ footer {
           }
 
           .links {
+            display: flex;
             li {
+              margin-right: 30px;
               font-size: 19px;
               color: $gray;
-              margin-right: 15px;
               a {
                 transition: all 0.3s;
                 &:hover {

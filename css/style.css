@@ -231,18 +231,51 @@ header .btn .menu-btn:hover {
   padding-bottom: 30px;
   background-size: cover;
 }
+.banner-section .container-fluid .value-row {
+  margin-top: 50px;
+}
+.banner-section .container-fluid .value-row .content {
+  width: 100% !important;
+}
 .banner-section .container-fluid .row .content {
   text-align: center;
-  width: 900px;
   margin: 0 auto;
   color: #fff;
+  width: 900px;
+}
+.banner-section .container-fluid .row .content .image-column img {
+  width: auto;
+  margin-bottom: 20px;
+}
+.banner-section .container-fluid .row .content .disclaimer p {
+  margin-top: 20px;
+  font-size: 15px;
 }
 .banner-section .container-fluid .row .content .button {
   margin: 0 auto;
 }
 .banner-section .container-fluid .row .content .input-group {
-  width: 600px;
+  width: 800px;
   margin: 0 auto;
+}
+@media (max-width: 649px) {
+  .banner-section .container-fluid .row .content .input-group {
+    flex-direction: column;
+  }
+  .banner-section .container-fluid .row .content .input-group input {
+    width: 100%;
+    border-radius: 50px !important;
+    margin-bottom: 15px;
+  }
+  .banner-section .container-fluid .row .content .input-group .button {
+    border-radius: 50px !important;
+    margin: 0 auto !important;
+  }
+}
+@media (max-width: 861px) {
+  .banner-section .container-fluid .row .content .input-group {
+    width: 100%;
+  }
 }
 @media (max-width: 575px) {
   .banner-section .container-fluid .row .content .input-group {
@@ -384,6 +417,12 @@ main img {
 .features-section {
   background: linear-gradient(0deg, rgb(7, 14, 36), rgba(7, 14, 36, 0.82)), url(../img/Features-bg.jpg);
   background-size: cover;
+}
+.features-section .container-fluid .bottom-row {
+  justify-content: center;
+}
+.features-section .container-fluid .row {
+  margin-bottom: 50px;
 }
 @media (max-width: 991px) {
   .features-section .container-fluid .row .col-md-3 {
@@ -596,6 +635,9 @@ main img {
   background: linear-gradient(0deg, rgba(7, 14, 36, 0.97), rgba(7, 14, 36, 0.93)), url(../img/Team-bg.jpg);
   background-size: cover;
 }
+.team-section .container-fluid .row {
+  margin-bottom: 50px;
+}
 .team-section .container-fluid .row .content {
   background: rgba(255, 255, 255, 0.0509803922);
   padding: 52px 34px;
@@ -715,6 +757,62 @@ main img {
   opacity: 0.8;
 }
 
+/*### Contact ###*/
+.contact .container-fluid {
+  /*### Row ###*/
+}
+.contact .container-fluid .row {
+  /*### Contact-form ###*/
+}
+.contact .container-fluid .row .contact-form {
+  width: 65%;
+  margin: 0 auto;
+}
+@media (max-width: 1199px) {
+  .contact .container-fluid .row .contact-form {
+    width: 100% !important;
+  }
+}
+.contact .container-fluid .row .contact-form .container {
+  padding: 16px;
+  /* Full-width input fields */
+}
+.contact .container-fluid .row .contact-form .container input[type=text],
+.contact .container-fluid .row .contact-form .container input[type=password],
+.contact .container-fluid .row .contact-form .container input[type=tel],
+.contact .container-fluid .row .contact-form .container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: transparent !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2117647059);
+  color: rgb(212, 212, 212);
+}
+.contact .container-fluid .row .contact-form .container input[type=text]:focus,
+.contact .container-fluid .row .contact-form .container input[type=password]:focus,
+.contact .container-fluid .row .contact-form .container input[type=tel]:focus,
+.contact .container-fluid .row .contact-form .container textarea {
+  background-color: #ddd;
+  outline: none;
+  color: rgb(212, 212, 212);
+}
+.contact .container-fluid .row .contact-form .container .titles {
+  text-align: center;
+}
+.contact .container-fluid .row .contact-form .container .titles p {
+  margin-bottom: 0;
+}
+.contact .container-fluid .row .contact-form .container .button {
+  margin: 0 auto;
+}
+.contact .container-fluid .row .contact-form .container .button .btn {
+  margin: 0 auto !important;
+  color: #fff;
+}
+
+/*### Contact-End ###*/
 .page-header {
   padding-top: 12%;
   padding-bottom: 0;
@@ -767,6 +865,7 @@ footer .container-fluid .bottom {
   border-top: 1px solid rgba(255, 255, 255, 0.1490196078);
   padding-top: 22px;
   margin-top: 50px;
+  margin-bottom: 0 !important;
 }
 @media (max-width: 575px) {
   footer .container-fluid .bottom {
@@ -775,25 +874,22 @@ footer .container-fluid .bottom {
 }
 footer .container-fluid .bottom p {
   font-size: 16px;
+  text-align: center;
 }
 @media (max-width: 575px) {
   footer .container-fluid .bottom p {
     margin-bottom: 12px;
   }
 }
-footer .container-fluid .bottom .column-right {
-  text-align: right;
+footer .container-fluid .row {
+  margin-bottom: 40px;
 }
-@media (max-width: 575px) {
-  footer .container-fluid .bottom .column-right {
-    text-align: center;
-  }
+footer .container-fluid .row .footer-logo {
+  width: fit-content;
+  margin: 0 auto;
 }
-footer .container-fluid .bottom .column-right p a {
-  transition: all 0.3s;
-}
-footer .container-fluid .bottom .column-right p a:hover {
-  color: #fff;
+footer .container-fluid .row .footer-logo img {
+  width: 270px;
 }
 @media (max-width: 991px) {
   footer .container-fluid .row .address-column {
@@ -805,11 +901,14 @@ footer .container-fluid .bottom .column-right p a:hover {
     width: 100%;
   }
 }
+footer .container-fluid .row .content .top-header {
+  text-align: center;
+}
+footer .container-fluid .row .content .top-header h4 {
+  margin: 0 auto;
+}
 footer .container-fluid .row .content .footer-header {
   margin-bottom: 20px;
-}
-footer .container-fluid .row .content .footer-header .footer-logo img {
-  width: 270px;
 }
 footer .container-fluid .row .content .footer-header h4 {
   font-size: 35px;
@@ -817,6 +916,7 @@ footer .container-fluid .row .content .footer-header h4 {
   border-bottom: 1px solid;
   padding-bottom: 19px;
   width: fit-content;
+  margin-bottom: 20px;
 }
 @media (max-width: 575px) {
   footer .container-fluid .row .content .footer-header h4 {
@@ -847,7 +947,7 @@ footer .container-fluid .row .content .body-content .address .number {
   font-size: 16px;
   margin-bottom: 6px;
 }
-@media (max-width: 400px) {
+@media (max-width: 907px) {
   footer .container-fluid .row .content .body-content .address .number {
     font-size: 13px;
   }
@@ -864,10 +964,13 @@ footer .container-fluid .row .content .body-content .address button {
 footer .container-fluid .row .content .body-content .address button:hover {
   opacity: 0.6;
 }
+footer .container-fluid .row .content .body-content .links {
+  display: flex;
+}
 footer .container-fluid .row .content .body-content .links li {
+  margin-right: 30px;
   font-size: 19px;
   color: #9ba0b8;
-  margin-right: 15px;
 }
 footer .container-fluid .row .content .body-content .links li a {
   transition: all 0.3s;

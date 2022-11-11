@@ -967,6 +967,11 @@ footer .container-fluid .row .content .body-content .address button:hover {
 footer .container-fluid .row .content .body-content .links {
   display: flex;
 }
+@media (max-width: 677px) {
+  footer .container-fluid .row .content .body-content .links {
+    flex-direction: column !important;
+  }
+}
 footer .container-fluid .row .content .body-content .links li {
   margin-right: 30px;
   font-size: 19px;

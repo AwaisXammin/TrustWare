@@ -110,30 +110,35 @@
             </p>
             <form
               method="POST"
-              action="https://script.google.com/macros/s/AKfycbwu2k0On1U3yARTGJ9iL75RxjOuh-PWEORETKE6N54BScSRrStewCaOhQF3t8sWrSoz/exec"
+              action="https://script.google.com/macros/library/d/1WUP0jxZaNbdUZ6wmDlYVIwV9KT3njWvwhlpvNy7mfeNt-GqOj1dYhMaY/1"
             >
-              <div
-                class="input-group"
-                data-aos="fade-down"
-                data-aos-delay="900"
-              >
-                <input
-                  name="Email"
-                  type="email"
-                  class="form-control"
-                  placeholder="Enter your email"
-                />
-                <input
-                  name="Phone"
-                  type="tel"
-                  class="form-control"
-                  placeholder="Enter your phone number"
-                />
-                <div class="button">
-                  <span>
-                    <button type="submit">Signup</button>
-                  </span>
-                </div>
+              <input name="Email" type="email" placeholder="Email" required />
+              <input name="Name" type="text" placeholder="Name" required />
+              <button type="submit">Send</button>
+            </form>
+            <form
+              method="POST"
+              action="https://script.google.com/macros/s/AKfycbwu2k0On1U3yARTGJ9iL75RxjOuh-PWEORETKE6N54BScSRrStewCaOhQF3t8sWrSoz/exec"
+              class="input-group"
+              data-aos="fade-down"
+              data-aos-delay="900"
+            >
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+              />
+              <input
+                type="tel"
+                class="form-control"
+                id="phone"
+                name="phone"
+                placeholder="Enter your phone number"
+              />
+              <div class="button">
+                <button type="submit">Signup</button>
               </div>
             </form>
             <div class="disclaimer" data-aos="fade-down" data-aos-delay="900">

@@ -777,7 +777,7 @@ main img {
   padding: 16px;
   /* Full-width input fields */
 }
-.contact .container-fluid .row .contact-form .container input[type=text],
+.contact .container-fluid .row .contact-form .container input[type=email],
 .contact .container-fluid .row .contact-form .container input[type=password],
 .contact .container-fluid .row .contact-form .container input[type=tel],
 .contact .container-fluid .row .contact-form .container textarea {
@@ -790,7 +790,7 @@ main img {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2117647059);
   color: rgb(212, 212, 212);
 }
-.contact .container-fluid .row .contact-form .container input[type=text]:focus,
+.contact .container-fluid .row .contact-form .container input[type=email]:focus,
 .contact .container-fluid .row .contact-form .container input[type=password]:focus,
 .contact .container-fluid .row .contact-form .container input[type=tel]:focus,
 .contact .container-fluid .row .contact-form .container textarea {

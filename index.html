@@ -135,8 +135,8 @@
             </form>
             <div class="disclaimer" data-aos="fade-down" data-aos-delay="900">
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga,
-                consequuntur nesciunt? Harum.
+                By signing up you are authorizing TrustWare to add you to our
+                mailing list.
               </p>
             </div>
           </div>
@@ -617,7 +617,7 @@
             </div>
 
             <div class="timeline-row" data-aos="fade-up" data-aos-delay="300">
-              <div class="timeline-time">Q8 2023<small></small></div>
+              <div class="timeline-time">Q4 2024<small></small></div>
               <div class="timeline-content">
                 <i class="icon-attachment"
                   ><img src="img/Invesment.png" alt=""
@@ -631,7 +631,7 @@
             </div>
 
             <div class="timeline-row" data-aos="fade-up" data-aos-delay="300">
-              <div class="timeline-time">Q9 2023<small></small></div>
+              <div class="timeline-time">Q1 2025<small></small></div>
               <div class="timeline-content">
                 <i class="icon-attachment"
                   ><img src="img/Invesment.png" alt=""
@@ -645,7 +645,7 @@
             </div>
 
             <div class="timeline-row" data-aos="fade-up" data-aos-delay="300">
-              <div class="timeline-time">Q10 2023<small></small></div>
+              <div class="timeline-time">Q2 2025<small></small></div>
               <div class="timeline-content">
                 <i class="icon-attachment"
                   ><img src="img/Invesment.png" alt=""
@@ -659,7 +659,7 @@
             </div>
 
             <div class="timeline-row" data-aos="fade-up" data-aos-delay="300">
-              <div class="timeline-time">Q11 2023<small></small></div>
+              <div class="timeline-time">Q3 2025<small></small></div>
               <div class="timeline-content">
                 <i class="icon-attachment"
                   ><img src="img/Invesment.png" alt=""
@@ -673,7 +673,7 @@
             </div>
 
             <div class="timeline-row" data-aos="fade-up" data-aos-delay="300">
-              <div class="timeline-time">Q12 2023<small></small></div>
+              <div class="timeline-time">Q4 2025<small></small></div>
               <div class="timeline-content">
                 <i class="icon-attachment"
                   ><img src="img/Invesment.png" alt=""
@@ -1267,7 +1267,7 @@
                 ></textarea>
 
                 <div class="button">
-                  <button type="submit" class="btn">Register</button>
+                  <button type="submit" class="btn">Submit</button>
                 </div>
               </div>
             </form>
@@ -1407,7 +1407,7 @@
 
         <div class="row">
           <div class="footer-logo">
-            <img src="img/Logo.png" alt="Logo" />
+            <a href="#home"><img src="img/Full Logo.png" alt="Logo" /></a>
           </div>
         </div>
 
@@ -1430,17 +1430,8 @@
         $message = $_POST['note'];
         
         $subject = "Business Lead";
-        $message = "Email: ".$email."<br>Message: ".$note.; $headers =
-    "MIME-Version: 1.0\r\n"; $headers .= "Content-type: text/html;
-    charset=UTF-8\r\n"; $headers .= "From: <".$from. ">" ; $send =
-    mail($to,$subject,$message,$headers); if($send) { echo "
-    <script>
-      alert("Mail Sent Successfully");
-    </script>
-    "; }else{ echo "
-    <script>
-      alert("Mail Not Sent");
-    </script>
+         $message = "Email: ".$email."
+   
     "; } } ?>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

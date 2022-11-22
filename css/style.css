@@ -115,7 +115,7 @@ h2 {
   font-size: 50px;
   color: #fff;
   margin-top: 22px;
-  margin-bottom: 15px;
+  margin-bottom: 35px !important;
 }
 @media (max-width: 767px) {
   h2 {
@@ -226,7 +226,7 @@ header .btn .menu-btn:hover {
 }
 
 .banner-section {
-  background: linear-gradient(0deg, rgb(7, 14, 36), rgba(7, 14, 36, 0.82)), url(../img/Banner-Img.jpg);
+  background-image: linear-gradient(130deg, #262261, #070e25);
   padding-top: 200px;
   padding-bottom: 30px;
   background-size: cover;
@@ -236,6 +236,9 @@ header .btn .menu-btn:hover {
 }
 .banner-section .container-fluid .value-row .content {
   width: 100% !important;
+}
+.banner-section .container-fluid .value-row .content .text h4 {
+  margin-bottom: 35px;
 }
 .banner-section .container-fluid .row .content {
   text-align: center;
@@ -406,9 +409,6 @@ main img {
   border-radius: 20px;
 }
 
-.about-section .container-fluid .row .col-md-6 .content {
-  margin-top: 30px;
-}
 .about-section .container-fluid .row .col-md-6 .image {
   width: 75%;
   margin: 0 auto;
@@ -457,10 +457,12 @@ main img {
   background: linear-gradient(45deg, black, transparent);
   background-image: linear-gradient(130deg, #262261, #623c97);
   border: none;
-  margin-bottom: 20px;
+  margin: 22px auto;
+  margin-top: 0;
 }
 .features-section .container-fluid .row .content .text {
   color: #fff;
+  text-align: center;
 }
 
 .roadmap-section .container-fluid .container .timeline {
